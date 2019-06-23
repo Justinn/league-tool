@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { getSummonerByName } from '../store/reducers/';
 import { withRouter } from 'react-router-dom';
 
 class Searchbar extends Component {
@@ -44,13 +43,4 @@ class Searchbar extends Component {
   }
 }
 
-const mapDispatchToProps = dispatch => ({
-  searchByName: name => dispatch(getSummonerByName(name)),
-});
-
-export default withRouter(
-  connect(
-    null,
-    mapDispatchToProps
-  )(Searchbar)
-);
+export default withRouter(Searchbar);

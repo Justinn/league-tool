@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './screens/Home';
 import Navbar from './Navbar';
 import Searchbar from './Searchbar';
-import SummonerProfile from './SummonerProfile';
+import SummonerProfile from './screens/SummonerProfile';
 
 const App = () => {
   return (

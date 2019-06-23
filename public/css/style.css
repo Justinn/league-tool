@@ -31,6 +31,9 @@ li .link:hover:not(.active) {
 #searchbar {
   display: flex;
   justify-content: center;
+  align-self: center;
+  margin-left: 12%;
+  width: 85%;
 }
 
 #searchbar ul {
